@@ -4,7 +4,8 @@
   "description": "CMS based on MEAN Stack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run lint & nodemon app.js",
+    "lint": "./node_modules/.bin/eslint **/*.js"
   },
   "author": "Alexis Goupillot",
   "license": "ISC",
@@ -12,6 +13,9 @@
     "eslint": "^7.32.0"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.5"
   }
 }
